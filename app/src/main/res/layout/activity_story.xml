@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.interactivestory.ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/storyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/page0"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: &quot;%1$s, come to 28.543436, -81.369031.&quot; Those coordinates aren&apos;t far, but you don&apos;t know if your oxygen will last there and back."
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignLeft="@+id/storyImageView"
+        android:layout_alignStart="@+id/storyImageView"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:lineSpacingMultiplier="1.2"
+        android:background="#ffffffff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP AND INVESTIGATE"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#ff3a8aec" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE HOME TO EARTH"
+        android:id="@+id/choiceButton1"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_alignLeft="@+id/choiceButton2"
+        android:layout_alignStart="@+id/choiceButton2"
+        android:background="@android:color/white"
+        android:textColor="#ff3a8aec" />
+
+</RelativeLayout>
